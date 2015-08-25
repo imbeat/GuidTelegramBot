@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Threading.Tasks;
 using Telegram.Bot;
 
@@ -12,7 +13,8 @@ namespace GuidTelegramBot.Core
         }
         static async Task Run()
         {
-            var bot = new Api("115571224:AAFe4gEZ4b9hzlwtZrfaS-4HITTuN-Pi9rU");
+            var token = ConfigurationManager.AppSettings["apiToken"];
+            var bot = new Api(token);
 
             var me = await bot.GetMe();
 
@@ -27,14 +29,13 @@ namespace GuidTelegramBot.Core
                 foreach (var update in updates)
                 {
                     if (update.Message.Text != null)
-                        await bot.SendTextMessage(update.Message.Chat.Id, update.Message.Text);
+                        await bot.SendTextMessage(update.Message.Chat.Id, Guid.NewGuid().ToString());
 
                     offset = update.Id + 1;
                 }
 
                 await Task.Delay(1000);
             }
-
         }
     }
 }
