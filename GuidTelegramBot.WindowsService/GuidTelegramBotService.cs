@@ -19,7 +19,7 @@ namespace GuidTelegramBot.WindowsService
         private async Task RunBot()
         {
             var guidBot = new GuidBot();
-            await guidBot.Do();
+            await guidBot.Start();
         }
 
         protected override void OnStop()

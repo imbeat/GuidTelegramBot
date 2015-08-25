@@ -4,6 +4,6 @@ namespace GuidTelegramBot.Core
 {
     public interface IBot
     {
-        Task Do();
+        Task Start();
     }
 }

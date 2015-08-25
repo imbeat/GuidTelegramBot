@@ -33,6 +33,7 @@
             this.txtLog = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.btnStop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtLog
@@ -63,11 +64,22 @@
             this.notifyIcon.Text = "Guid Telegram Bot";
             this.notifyIcon.Visible = true;
             // 
+            // btnStop
+            // 
+            this.btnStop.Location = new System.Drawing.Point(330, 395);
+            this.btnStop.Name = "btnStop";
+            this.btnStop.Size = new System.Drawing.Size(75, 23);
+            this.btnStop.TabIndex = 2;
+            this.btnStop.Text = "Остановить";
+            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(498, 430);
+            this.Controls.Add(this.btnStop);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txtLog);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -84,6 +96,7 @@
         private System.Windows.Forms.TextBox txtLog;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.Button btnStop;
     }
 }
 

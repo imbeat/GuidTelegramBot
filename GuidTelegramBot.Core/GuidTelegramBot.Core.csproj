@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BotState.cs" />
     <Compile Include="GuidBot.cs" />
     <Compile Include="IBot.cs" />
     <Compile Include="MessageInfoEventArgs.cs" />
