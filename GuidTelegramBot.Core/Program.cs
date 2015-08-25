@@ -3,7 +3,7 @@ using System.Configuration;
 using System.Threading.Tasks;
 using Telegram.Bot;
 
-namespace GuidTelegramBot.Core
+namespace GuidTelegramBot
 {
     public static class Program
     {
