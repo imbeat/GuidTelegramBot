@@ -12,6 +12,7 @@ namespace GuidTelegramBot.Console
         static async Task Run()
         {
             var guidBot = new GuidBot();
+            guidBot.MessageReceived+= (sender, args) => System.Console.WriteLine("{0} : {1}",args.UserName, args.Text);
             await guidBot.Do();
         }
     }
