@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuidTelegramBot.Console", "GuidTelegramBot\GuidTelegramBot.Console.csproj", "{59899CEF-1525-441B-96F3-2B3817397ADF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuidTelegramBot.Console", "GuidTelegramBot.Console\GuidTelegramBot.Console.csproj", "{59899CEF-1525-441B-96F3-2B3817397ADF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuidTelegramBot.WindowsService", "GuidTelegramBot.WindowsService\GuidTelegramBot.WindowsService.csproj", "{A8A7012B-6466-4C42-839C-44DEF2005800}"
 EndProject

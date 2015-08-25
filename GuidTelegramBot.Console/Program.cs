@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using GuidTelegramBot.Core;
 
-namespace GuidTelegramBot
+namespace GuidTelegramBot.Console
 {
     public static class Program
     {
