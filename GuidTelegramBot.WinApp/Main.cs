@@ -16,6 +16,7 @@ namespace GuidTelegramBot.WinApp
             _bot.MessageReceived += (sender, args) => txtLog.AppendText(string.Format("{0} : {1}{2}", args.UserName, args.Text, Environment.NewLine));
             this.Resize += Main_Resize;
             this.notifyIcon.MouseDoubleClick += formNotifyIcon_MouseDoubleClick;
+            this.notifyIcon.MouseClick += formNotifyIcon_MouseDoubleClick;
         }
 
         private async void btnStart_Click(object sender, EventArgs e)
